@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Portafolio de Jorge Burgos">
+    <meta name="author" content="Jorge Alonso Burgos Maldonado">
+    <meta name="robots" content="index, follow">
+
+    <title>Jorge Burgos - Portafolio</title>
+
+    <link rel="icon" type="image/png" href="jbpfp.jpg">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <header>
+        <h1 class="nombre-header">Jorge Alonso Burgos Maldonado</h1>
+        <p class="descripcion-header">Estudiante de Ingeniería en Software</p>
+
+        <nav class="nav-paginas">
+            <a class="a1" href="index.html">Inicio</a>
+            <a class="a1" href="about.html">Sobre mi</a>
+            <a class="a1" href="index.html#proyectos">Proyectos</a>
+            <a class="a1" href="skills.html">Habilidades</a>
+            <a class="a1" href="contact.html">Contacto</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="hero-container">
+
+            <div class="hero-content">
+                <h2>¡Bienvenido!</h2>
+
+                <p>
+                    Mi nombre es <strong>Jorge Burgos</strong>, y este es mi portafolio personal.
+                </p>
+
+                <p>
+                    Soy estudiante de ingeniería en software en el <strong>ITSON</strong> y actualmente curso la materia de Aplicaciones Web.
+                </p>
+
+                <p>
+                    A continuación hay algunos <strong>ejemplos de mi trabajo</strong>, tanto académico como personal, e información sobre mí y cómo contactarme.
+                </p>
+
+            </div>
+
+            <div class="hero-image">
+                <img src="jbpfp.jpg" alt="jorge" class="profile-img">
+            </div>
+
+        </section>
+
+        <section id="proyectos" class="proyectos-container">
+
+            <h2>Proyectos</h2>
+
+            <div class="proyectos-tabs">
+                <button class="tab-btn active" data-tab="academicos">Académicos</button>
+                <button class="tab-btn" data-tab="personales">Personales</button>
+            </div>
+
+            <div class="tab-content" id="academicos">
+                <div class="proyectos-grid">
+
+                    <article class="card proyecto-card">
+                        <span class="proximamente">Actualmente en desarrollo</span>
+                        <h3>UNO Spin</h3>
+
+                        <p>Desarrollo de una versión digital de <strong>UNO Spin</strong>  para la materia arquitectura en software.</p>
+                        <a href="https://github.com/JorgeBurgos117/UnoSpin" target="_blank" class="btn-repo">Repositorio de GitHub</a>
+                    </article>
+
+                    <article class="card proyecto-card">
+                        <h3>Sistema de vuelos</h3>
+                        
+                        <p>Sistema de <strong>gestión y administración</strong> de vuelos basado en Java y MongoDB.</p>
+                        <a href="https://github.com/JorgeBurgos117/UnoSpin" target="_blank" class="btn-repo">Repositorio de GitHub</a>
+                    </article>
+
+                    <article class="card proyecto-card">
+                        <span class="proximamente">Activo</span>
+                        <h3>Servicio social</h3>
+                        
+
+                        <p>Grabación de voz para las <strong> producciones institucionales del ITSON</strong>.</p>
+                        <a href="https://www.youtube.com/live/B0seAIcSHhM?si=t1d8h6e1J49fihoW&t=2465" target="_blank" class="btn-repo">Youtube - Informe de actividades 2024</a>
+                        <a href="https://www.youtube.com/live/WUdIKl1GOSE?si=EUfx_1jbhbimWj_B&t=2560" target="_blank" class="btn-repo">Youtube - Informe de actividades 2025</a>
+                    </article>
+
+                    <article class="card proyecto-card">
+                        <h3>Plants vs Zombies (Java)</h3>
+                        
+                        <p>Recreación en java, completamente interactiva, de <strong>Plants vs Zombies</strong> .</p>
+                        <a href="https://github.com/JorgeBurgos117/UnoSpin" target="_blank" class="btn-repo">Repositorio de GitHub</a>
+                    </article>
+
+
+                </div>
+            </div>
+
+            <div class="tab-content" id="personales" style="display:none;">
+                <div class="proyectos-grid">
+
+                    <article class="card proyecto-card">
+                        <h3>Modelos 3D</h3>
+
+                        <p>Diseño y publicación de modelos 3D, principamente enfocados en la <strong>impresión 3D</strong>.</p>
+                        <a href="https://makerworld.com/en/@TheGiorgio" target="_blank" class="btn-repo">Perfil de MakerWorld</a>
+                    </article>
+
+                    <article class="card proyecto-card">
+                        <h3>Homelab</h3>
+
+                        <p>Despliegue de hardware propio para el <strong>hosting de servicios</strong> de manera doméstica.</p>
+
+                    </article>
+
+                    <article class="card proyecto-card">
+                        <span class="proximamente">Actualmente en desarrollo</span>
+                        <h3>Impresora 3D de cinta trasportadora</h3>
+
+                        <p>Diseño y construcción de un <strong>nuevo modelo de impresora 3D</strong> de cinta transportadora, y eventual acomplamiento a software de impresión existente.</p>
+                    </article>
+
+
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Jorge Alonso Burgos Maldonado. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
