@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     });
 
-    //fade proyectos
+    // Fade proyectos
     const tabButtons = document.querySelectorAll(".tab-btn");
     const tabContents = document.querySelectorAll(".tab-content");
     const defaultTab = tabButtons[0];
@@ -86,6 +86,48 @@ document.addEventListener("DOMContentLoaded", () => {
             }
 
         });
+    });
+
+
+
+    //imágenes slide
+    const carousels = document.querySelectorAll(".image-carousel");
+
+    carousels.forEach(carousel => {
+        const slides = Array.from(carousel.querySelectorAll("img"));
+        const prevBtn = carousel.querySelector(".prev");
+        const nextBtn = carousel.querySelector(".next");
+        let currentIndex = 0;
+        const total = slides.length;
+
+        const wrapper = document.createElement("div");
+        wrapper.classList.add("slides-wrapper");
+
+        slides.forEach(img => wrapper.appendChild(img));
+        carousel.insertBefore(wrapper, prevBtn);
+
+        const showSlide = (index) => {
+            const offset = -index * 100;
+            wrapper.style.transform = `translateX(${offset}%)`;
+        };
+
+        showSlide(currentIndex);
+
+        nextBtn.addEventListener("click", () => {
+            currentIndex = (currentIndex + 1) % total;
+            showSlide(currentIndex);
+        });
+
+        prevBtn.addEventListener("click", () => {
+            currentIndex = (currentIndex - 1 + total) % total;
+            showSlide(currentIndex);
+        });
+
+        // iintervalo
+        setInterval(() => {
+            currentIndex = (currentIndex + 1) % total;
+            showSlide(currentIndex);
+        }, 5000);
     });
 
 });
